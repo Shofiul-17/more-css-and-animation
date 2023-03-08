@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes sliding{
+            /* from{
+                background-color: lightgreen;
+                left: 0;
+            }
+            to{
+                background-color: magenta;
+                left: 400px;
+            } */
+
+            0%{
+                /* background-color: lightgreen; */
+                background-color: yellow;
+                left: 0;
+                top: 0;
+                /* transform: scale(.5); */
+            }
+            25%{
+                /* top: 200px; */
+                top: 225px;
+                background-color: red;
+                transform: scale(.5);
+            }
+            /* 50%{
+                top: 200px;
+            } */
+            50%{
+                top: 0;
+                background-color: blue;
+                transform: scale(1);
+            }
+            75%{
+                /* top: 200px; */
+                top: 225px;
+                background-color: darkorange;
+                transform: scale(.5);
+            }
+            100%{
+                background-color: yellow;
+                left: 900px;
+                top: 0;
+            }
+        }
+        .stage{
+            /* width: 500px; */
+            width: 1000px;
+            height: 300px;
+            background-color: lightskyblue;
+        }
+        .ball{
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            border-radius: 50%;
+            position: relative;
+            /* animation: sliding 1s ease-in-out 0.5s 3 alternate; */
+            /* animation: sliding 1s ease-in-out 0.5s infinite alternate; */
+            animation: sliding 4s ease-in-out 0.5s infinite alternate;
+            animation-play-state: running;
+        }
+    </style>
+</head>
+<body>
+    <h1>Let's explore animation</h1>
+    <!-- .stage -->
+    <div class="stage">
+        <!-- .ball -->
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

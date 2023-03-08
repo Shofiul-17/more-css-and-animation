@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom</title>
+    <style>
+        :root{
+            --primary-color: slateblue;
+            --secondary-color: lightgray;
+            --single-border: 2px solid blue;
+        }
+        h1{
+            /* color: slateblue; */
+            /* color: steelblue; */
+            color: var(--primary-color);
+        }
+        #heading-3{
+            /* border: 2px solid slateblue; */
+            border: 2px solid var(--primary-color);
+        }
+        p{
+            /* border-bottom: 3px solid slateblue; */
+            /* border-bottom: 3px solid var(--primary-color); */
+            border-bottom: var(--single-border);
+        }
+        .box{
+            /* background-color: slateblue; */
+            background-color: var(--primary-color);
+            width: calc(100% - 500px);
+            height: 100px;
+        }
+        .pond{
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- h1*4{My strong Heading-$} -->
+    <!-- h1.heading#heading-$*4{My strong Heading-$} -->
+    <h1 class="heading" id="heading-1">My strong Heading-1</h1>
+    <h1 class="heading" id="heading-2">My strong Heading-2</h1>
+    <h1 class="heading" id="heading-3">My strong Heading-3</h1>
+    <h1 class="heading" id="heading-4">My strong Heading-4</h1>
+    <p>My simple talk</p>
+    <div class="box">
+        <h3>My boxing box</h3>
+    </div>
+    <div class="pond">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quae laudantium doloremque nemo at saepe perferendis quia eius assumenda ratione!</p>
+    </div>
+</body>
+</html>
